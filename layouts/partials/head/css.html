@@ -1,0 +1,21 @@
+<!-- {{- with resources.Get "css/main.css" }}
+{{- if eq hugo.Environment "development" }}
+		<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- else }}
+    {{- with . | minify | fingerprint }}
+		<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+		{{- end }}
+	{{- end }}
+{{- end }} -->
+
+{{- $style := resources.Get "css/main.scss" | toCSS }} 
+{{- if eq hugo.Environment "development" }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+{{- else }} {{- $style = $style | minify | fingerprint }}
+<link
+	rel="stylesheet"
+	href="{{ $style.RelPermalink }}"
+	integrity="{{ $style.Data.Integrity }}"
+	crossorigin="anonymous"
+/>
+{{- end }}

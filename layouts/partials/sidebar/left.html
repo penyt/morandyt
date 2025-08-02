@@ -1,0 +1,8 @@
+{{ $tocStyle := .Params.tocStyle | default "default" }}
+
+<div class="single-left">
+	<div class="single-toc toc-style-{{ $tocStyle }}">
+	<!-- <div class="single-toc"> -->
+		{{ .TableOfContents }} <!-- id="TableOfContents" -->
+	</div>
+</div>

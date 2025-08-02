@@ -1,0 +1,31 @@
+/* ============================================ */
+.terms {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 100px;
+}
+.terms-ul {
+	display: flex;
+	justify-content: flex-start;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.terms-ul li {
+	margin-left: 10px;
+	padding: 1px;
+}
+.terms-ul li a {
+	color: rgb(130, 130, 130);
+	text-decoration: underline;
+	font-style: italic;
+}
+.terms-ul li a:hover {
+	color: rgb(0, 0, 0);
+}
+.tag-title {
+	color: var(--text-color);
+	font-style: italic;
+	color: rgb(130, 130, 130);
+}

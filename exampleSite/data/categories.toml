@@ -1,0 +1,19 @@
+[penguin]
+	icon = "🐧"
+	color = "#ffffff"
+	bgColor = "#356a8eff"
+
+[fox]
+	icon = "🦊"
+	color = "#ffffff"
+	bgColor = "#3e2068ff"
+
+[orange]
+	icon = "🍊"
+	color = "#ffffff"
+	bgColor = "#7b411fff"
+
+[avocado]
+	icon = "🥑"
+	color = "#ffffff"
+	bgColor = "#0c6628ff"

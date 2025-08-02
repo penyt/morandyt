@@ -1,0 +1,9 @@
+{{ if .Site.Params.supports.likecoinID }}
+<iframe 
+    class="likecoin" 
+    height="160" 
+    src="https://button.like.co/in/embed/{{ .Site.Params.supports.likecoinID }}/button?referrer={{ .Permalink }}" 
+    width="300" 
+    frameborder=0
+></iframe>
+{{ end }}

@@ -1,0 +1,26 @@
+<div class="single-right">
+	<div class="right-author">
+
+		<img src="/img/penlike.png" alt="" class="right-author-img">
+
+		<p class="right-author-name">
+			{{ .Params.author }}
+		</p>
+
+		<p class="right-author-note">
+			{{ .Params.authorNote }}
+		</p>
+
+	</div>
+
+	<div class="right-cat">
+		<ul class="right-cat-ul">
+		{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+			<li>
+				<a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a> ({{ len $taxonomy }})
+			</li>
+		{{ end }}
+		</ul>
+	</div>
+
+</div>

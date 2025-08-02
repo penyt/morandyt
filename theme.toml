@@ -1,0 +1,31 @@
+name = 'Morandyt'
+license = 'MIT'
+licenselink = 'https://github.com/penyt/morandyt/LICENSE'
+description = 'This is a blog theme that uses Morandi main color tone.'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/penyt/morandyt'
+
+# If you have a running demo of the theme
+demosite = 'https://morandyt.penyt.com'
+
+# Taxonomy terms
+tags = ['blog', 'morandi','responsive','clean','darkmode']
+features = [
+	'awesome', 
+	'features',
+	'morandi',
+	'search',
+	'darkmode',
+	'toc',
+	'table of contents',
+	'disqus',
+	'giscus',
+	'responsive',
+]
+
+
+[author]
+	name = 'penyt'
+	homepage = 'https://github.com/penyt'
+

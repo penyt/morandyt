@@ -1,0 +1,79 @@
+html {
+	--blockquote-bg-color: rgb(145, 145, 145);
+	--blockquote-left-color: rgb(100, 100, 100);
+	--p-code: rgb(199, 59, 59);
+	--code-bg-color: rgb(210, 210, 210);
+}
+
+html.dark {
+	--blockquote-bg-color: rgb(124, 124, 124);
+	--blockquote-left-color: rgb(226, 226, 226);
+	--p-code: rgb(244, 190, 190);
+	--code-bg-color: rgb(52, 52, 52);
+}
+
+
+blockquote {
+	background-color: var(--blockquote-bg-color);
+	color: rgb(255, 255, 255);
+	font-style: italic;
+	padding: 5px 20px;
+	margin: 2rem 0;
+	border-left: 5px solid var(--blockquote-left-color);
+	border-radius: 0 10px 10px 0;
+	// width: 95%;
+}
+p code {
+	background-color: var(--code-bg-color);
+	color: var(--p-code);
+	border-radius: 5px;
+	padding: 2px 5px;
+	font-family: monospace;
+}
+
+.chroma {
+	background-color: var(--code-bg-color);
+	border-radius: 10px;
+	padding: 0 0.5rem;
+	overflow-x: auto;
+}
+
+
+table:not(.lntable) { // except for code block table
+	border-spacing: 0;
+	margin: 1rem 0;
+	box-shadow: 5px 5px 5px var(--shadow),
+				-5px 5px 5px var(--shadow);
+	border-radius: 10px;
+}
+
+table:not(.lntable) thead {
+	background-color: var(--header-bg);
+}
+
+table:not(.lntable) thead tr {
+	border-radius: 10px;
+}
+
+table:not(.lntable) thead th {
+	text-align: left;
+	padding: 0.75rem 1rem;
+	font-weight: 600;
+	color: #111827;
+}
+table:not(.lntable) thead th:first-child {
+	border-top-left-radius: 10px;
+}
+table:not(.lntable) thead th:last-child {
+	border-top-right-radius: 10px;
+}
+
+table:not(.lntable) tbody tr td {
+	padding: 0.75rem 1rem;
+	border-top: 1px solid var(--shadow);
+	color: var(--text-color);
+}
+
+table:not(.lntable) tbody tr:hover {
+	background-color: var(--shadow);
+}

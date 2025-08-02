@@ -1,0 +1,18 @@
+
+{{ if .Site.Params.supports.buymeacoffeeID }}
+<div class="buymeacoffee">
+    <script 
+        type="text/javascript" 
+        src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+        data-name="bmc-button"
+        data-slug="{{ .Site.Params.supports.buymeacoffeeID }}"
+        data-font= "{{ .Site.Params.supports.buymeacoffeeFont | default "Cookie" }}"
+        data-font-color="{{ .Site.Params.supports.buymeacoffeeFontColor | default "#000000" }}"
+        data-color="{{ .Site.Params.supports.buymeacoffeeColor | default "#FFDD00" }}"
+        data-outline-color="{{ .Site.Params.supports.buymeacoffeeOutlineColor | default "#000000" }}"
+        data-coffee-color="{{ .Site.Params.supports.buymeacoffeeCoffeeColor | default "#ffffff" }}"
+        data-text="{{ .Site.Params.supports.buymeacoffeeText | default "Buy me a coffee" }}"
+        data-emoji=""
+    ></script>
+</div>
+{{ end }}

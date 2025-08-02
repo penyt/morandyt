@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+{{ if .Site.Params.home.img }}
+    <div class="home-img-container" style="background-image: url('{{ .Site.Params.home.img | absURL }}');">
+
+		
+		{{ if .Site.Params.home.imgtitle }}
+		<div class="home-img-title">
+			<h1 style="margin: 0;">{{ .Site.Params.home.imgtitle }}</h1>
+		</div>
+		{{ end }}
+
+		{{ if .Site.Params.home.imgdescription }}
+		<div class="home-img-desc">
+			<p>{{ .Site.Params.home.imgdescription }}</p>
+		</div>
+		{{ end }}
+
+    </div>
+{{ end }}
+
+
+
+{{ if .Site.Params.home.content }}
+    <div class="home-content">
+		{{ .Content }} <!-- content/_index.md -->  
+    </div>
+    <br>
+{{ end }}
+
+
+
+{{ if .Site.Params.home.allcategories }}
+	{{ partial "categories.html" (dict "all" true) }}
+{{ end }}
+
+
+<div class="home-post-title">
+	<h1>{{ T "home.allposts" }}</h1>
+</div>
+{{ if .Site.Params.home.allposts }}
+    {{ $paginator := .Paginate (site.RegularPages.ByDate.Reverse) }}
+	{{ partial "pages.html" (dict "paginator" $paginator) }}
+{{end}}
+
+
+{{ end }}
+

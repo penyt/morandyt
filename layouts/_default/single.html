@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+<!--BUG-->
+<p align="center">this page uses layouts/_default/single.html</p>
+
+<h1 class="single-title">
+	{{ .Title }}
+</h1>
+
+{{ if .Description }}
+<p class="single-desc">
+	{{ .Description }}
+</p>
+{{ end }}
+
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }} 
+{{ $dateHuman := .Date | time.Format ":date_long" }}
+
+<div class="single-date">
+	<time datetime="{{ $dateMachine }}">
+		{{ $dateHuman }}
+	</time>
+</div>
+
+<!-- {{ partial "categories.html" (dict "taxonomy" "categories" "page" .) }} -->
+{{ partial "categories.html" (dict "page" .) }}
+
+{{ $tocStyle := .Params.tocStyle | default "order" }}
+
+<div class="single-content-container">
+	{{ partial "sidebar/left.html" . }}
+
+	<div class="single-content">
+		<section class="toc-inline toc-style-{{ $tocStyle }}">
+			<p class="toc-title">{{ T "single.tableOfContents" }}</p>
+			<p class="toc-desc"> inline table of content only on mobile</p>
+			{{ .TableOfContents }}
+		</section>
+		{{ .Content }} 
+		{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+	</div>
+
+	{{ partial "sidebar/right.html" . }}
+</div>
+
+<div class="single-supports">
+	{{ partial "supports/likecoin.html" . }} 
+	{{ partial "supports/buymeacoffee.html" . }}
+</div>
+
+<div class="single-comments">
+	{{ with .Site.Params.comments }} 
+		{{ if .enable }} 
+			{{ partial (printf "comments/%s.html" .provider) $ }} 
+		{{ end }} 
+	{{ end }}
+</div>
+
+{{ end }}

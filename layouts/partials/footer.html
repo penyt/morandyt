@@ -1,0 +1,26 @@
+<!-- <hr> -->
+<div class="footer-container">
+    <hr class="footer-topborder">
+
+    <div class="footer-content">
+        <div class="contact">
+        {{ if .Site.Params.footer.contact }}
+            <p>
+                {{ T "footer.contact" }}
+                <a href="mailto:{{ .Site.Params.footer.contact }}">{{ .Site.Params.footer.contact }}</a> 
+            </p>
+        {{ end }}
+        </div>
+    
+        <div class="copyright">
+            {{ if .Site.Params.footer.startYear }}
+                <p> © {{ .Site.Params.footer.startYear }}-{{ now.Year }} {{ .Site.Params.author}}{{ T "footer.copyright" }} </p>
+            {{ else }}
+                <p> © {{ now.Year }} {{ .Site.Params.author}}{{ T "footer.copyright" }}</p>
+            {{ end }}
+        </div>
+    </div>
+
+
+</hr>
+

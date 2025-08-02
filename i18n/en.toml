@@ -1,0 +1,24 @@
+[backtohome]
+	other = "Back to Home"
+
+[home]
+	[home.allcategories]
+		other = "All Categories"
+	[home.allposts]
+		other = "All Posts"
+
+[single]
+	[single.tableOfContents]
+		other = "Table of Contents"
+
+[footer]
+	[footer.contact]
+		other = "Contact:"
+	[footer.copyright]
+		other = ". All rights reserved."
+
+[notFound]
+	[notFound.error]
+		other = "Error"
+	[notFound.notexist]
+		other = "This page does not exist"

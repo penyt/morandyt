@@ -1,0 +1,32 @@
+<script>
+	(function () {
+		const theme = localStorage.getItem("theme");
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+		const html = document.documentElement;
+
+		if (theme === "dark" || (!theme && prefersDark)) {
+			html.classList.add("dark");
+		} else {
+			html.classList.remove("dark");
+		}
+
+		const color = localStorage.getItem("pref-color");
+		if (color) {
+			html.classList.add(color);
+		}
+	})();
+</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="description" content="{{ .Site.Params.description }}" />
+<meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
+<title>
+	{{ if .IsHome }}
+		{{ site.Title }}
+	{{ else }}
+		{{ printf "%s | %s" .Title site.Title }}
+	{{ end }}
+</title>
+{{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}

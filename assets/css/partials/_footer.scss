@@ -1,0 +1,28 @@
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	width: auto;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.footer-topborder {
+	width: auto;
+	border: 0;
+	border-top: 0.5px solid #707070;
+	margin: 1rem 0;
+}
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	line-height: 25px;
+	padding: 0 30px;
+}
+.contact {
+	width: 30%;
+}
+.copyright {
+	width: 40%;
+	text-align: right;
+}

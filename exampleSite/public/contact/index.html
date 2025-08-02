@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html 
+	lang="en" 
+	dir="ltr" 
+	data-default-color="dark" 
+	class="morandi-blue"
+	data-giscus-light="light"
+	data-giscus-dark="noborder_gray"
+>
+	<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+		<script>
+	(function () {
+		const theme = localStorage.getItem("theme");
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+		const html = document.documentElement;
+
+		if (theme === "dark" || (!theme && prefersDark)) {
+			html.classList.add("dark");
+		} else {
+			html.classList.remove("dark");
+		}
+
+		const color = localStorage.getItem("pref-color");
+		if (color) {
+			html.classList.add(color);
+		}
+	})();
+</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="description" content="hugo theme morandyt demo" />
+<meta name="keywords" content="morandyt, penyt, hugo">
+<title>
+	
+		Contact Us 聯絡我們 | Morandyt Demo
+	
+</title>
+
+<link rel="stylesheet" href="/css/main.css" />
+ 
+			<script src="/js/main.js"></script>
+
+
+	</head>
+
+	
+		
+	<body  >
+		<a id="gototop" href="javascript:scroll(0,0)"></a>
+
+		<header>
+<div class="header-container">
+    <h1><a class=header-site-title href="/">Morandyt Demo</a></h1>
+	<div class="media-block">
+		<button class="toggle toggle-place2" aria-label="darkModeToggle">☀︎</button>
+
+		<button class="menu-toggle" aria-label="開啟菜單">☰</button>
+		
+	<nav class="menu"> 
+		<ul class="menu-list">
+
+		<li>
+			<a href="/"
+			>Home</a>
+		</li>
+
+		<li>
+			<a href="/about/"
+			>About</a>
+		</li>
+
+		<li>
+			<a href="/posts/"
+			>All Posts</a>
+		</li>
+
+		<li>
+			<a href="/contact/"
+			>Contact</a>
+		</li>
+
+		<li>
+			<a href="/search/"
+			>Search</a>
+		</li>
+			
+		
+		</ul>
+		<button class="toggle toggle-place1" aria-label="darkModeToggle">☀︎</button>
+	</nav>
+
+	</div>
+</div>
+
+</header>
+
+		<main class="main"> 
+			
+
+
+
+<p align="center">this page uses layouts/_default/list.html</p>
+
+<div class="list-content">
+	
+	<h1>Contact Us 聯絡我們</h1>
+	<p>Here are some ways that you could contact me :)</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Media</th>
+          <th style="text-align: left">URL</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">GitHub</td>
+          <td style="text-align: left"><a href="https://github.com/penyt">https://github.com/penyt</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Email</td>
+          <td style="text-align: left"><a href="mailto:pen@penyt.com">pen@penyt.com</a></td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>This page is created by <code>content/contact/_index.md</code>, and rendered by using <code>layouts/_default/list.html</code>.</p>
+</blockquote>
+
+	
+</div>
+	
+
+
+<div class="list-posts">
+	
+</div>
+
+
+
+
+
+
+		</main>
+
+		<footer>
+<div class="footer-container">
+    <hr class="footer-topborder">
+
+    <div class="footer-content">
+        <div class="contact">
+        
+            <p>
+                Contact:
+                <a href="mailto:pen@penyt.com">pen@penyt.com</a> 
+            </p>
+        
+        </div>
+    
+        <div class="copyright">
+            
+                <p> © 2024-2025 Penyt. All rights reserved. </p>
+            
+        </div>
+    </div>
+
+
+</hr>
+
+</footer>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+{{ define "main" }}
+<div class="not-found">
+	<h1>404 {{ T "notFound.error" }}</h1>
+	<p>{{ T "notFound.notexist" }}</p>
+	<a href="{{ "/" | relLangURL }}">{{ T "backtohome" }}</a>
+</div>
+{{ end }}

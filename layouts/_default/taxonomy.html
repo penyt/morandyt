@@ -1,0 +1,30 @@
+{{ define "main" }}
+<!-- /categories/ & /tags/ will use this html -->
+
+
+<!--DEBUG-->
+<p align="center">this page uses layouts/_default/taxonomy.html</p>
+
+{{- $term := .Data.Term | lower }}
+{{- $plural := .Data.Plural }}
+
+{{ if eq $plural "categories" }}
+	{{- $data := index site.Data.categories $term }}
+	{{- $icon := $data.icon | default "" }}
+	{{- $color := $data.color | default "#222" }}
+	{{- $bg := $data.bgColor | default "#eee" }}
+	<div class="taxonomy-title">
+		<h1 class="cat-title" style="color: {{ $color }}; background-color: {{ $bg }};">{{ $icon }} {{ .Title }}</h1>
+	</div>
+
+{{ else if eq $plural "tags" }}
+	<div class="taxonomy-title">
+		<h1 class="tag-title">#{{ .Title }}</h1>
+	</div>
+{{ end }}
+	
+{{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+{{ partial "pages.html" (dict "paginator" $paginator) }}
+
+<!--define main -->
+{{ end }}

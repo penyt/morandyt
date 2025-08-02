@@ -1,0 +1,18 @@
++++
+title = 'Home'
+date = 2023-01-01T08:00:00-07:00
+draft = false
++++
+
+# TITLE IN THE HOME PAGE  
+CONTENT IN THE HOME PAGE  
+
+This is a Hugo Theme made by penyt, called "**Morandyt**".  The name comes from the color tone Morandi.  
+
+If you like this hugo theme, give us a little ⭐️ on github!  
+
+{{< link-card name="penyt GitHub" desc="this is my github link" link="https://github.com/penyt" img="https://raw.githubusercontent.com/penyt/Copyright-and-License/refs/heads/main/LOGO/penlike.png" >}}
+
+By the way, I have made a tmux script called [tmux-pencil](https://github.com/penyt/tmux-pencil). You may take a look at it on my GitHub. It is a simple bash script that can help you easily set up your `.tmux.conf` without installing any tmux plugin.  
+
+

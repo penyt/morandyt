@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html 
+	lang="en" 
+	dir="ltr" 
+	data-default-color="dark" 
+	class="morandi-blue"
+	data-giscus-light="light"
+	data-giscus-dark="noborder_gray"
+>
+	<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+		<script>
+	(function () {
+		const theme = localStorage.getItem("theme");
+		const prefersDark = window.matchMedia(
+			"(prefers-color-scheme: dark)"
+		).matches;
+		const html = document.documentElement;
+
+		if (theme === "dark" || (!theme && prefersDark)) {
+			html.classList.add("dark");
+		} else {
+			html.classList.remove("dark");
+		}
+
+		const color = localStorage.getItem("pref-color");
+		if (color) {
+			html.classList.add(color);
+		}
+	})();
+</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="description" content="hugo theme morandyt demo" />
+<meta name="keywords" content="morandyt, penyt, hugo">
+<title>
+	
+		Red | Morandyt Demo
+	
+</title>
+
+<link rel="stylesheet" href="/css/main.css" />
+ 
+			<script src="/js/main.js"></script>
+
+
+	</head>
+
+	
+		
+	<body  >
+		<a id="gototop" href="javascript:scroll(0,0)"></a>
+
+		<header>
+<div class="header-container">
+    <h1><a class=header-site-title href="/">Morandyt Demo</a></h1>
+	<div class="media-block">
+		<button class="toggle toggle-place2" aria-label="darkModeToggle">☀︎</button>
+
+		<button class="menu-toggle" aria-label="開啟菜單">☰</button>
+		
+	<nav class="menu"> 
+		<ul class="menu-list">
+
+		<li>
+			<a href="/"
+			>Home</a>
+		</li>
+
+		<li>
+			<a href="/about/"
+			>About</a>
+		</li>
+
+		<li>
+			<a href="/posts/"
+			>All Posts</a>
+		</li>
+
+		<li>
+			<a href="/contact/"
+			>Contact</a>
+		</li>
+
+		<li>
+			<a href="/search/"
+			>Search</a>
+		</li>
+			
+		
+		</ul>
+		<button class="toggle toggle-place1" aria-label="darkModeToggle">☀︎</button>
+	</nav>
+
+	</div>
+</div>
+
+</header>
+
+		<main class="main"> 
+			
+
+
+
+
+<p align="center">this page uses layouts/_default/taxonomy.html</p>
+
+
+	<div class="taxonomy-title">
+		<h1 class="tag-title">#Red</h1>
+	</div>
+
+	
+
+
+<div class="list-posts">
+	
+	<div class="post-box">
+		<h2><a href="/p/post-3/">Post 3</a></h2>
+		<h3 class="post-date">2023-03-15</h3>
+		<p class="post-description"></p>
+		<p class="post-summary">H1 H2 quote
+1 2 3 4 sudo apt upgrade sudo apt install zsh echo …</p>
+	</div>
+
+	<p class="list-split-posts">• &emsp; • &emsp; •</p>
+	
+	<div class="post-box">
+		<h2><a href="/p/post-2/">Post 2</a></h2>
+		<h3 class="post-date">2023-02-15</h3>
+		<p class="post-description"></p>
+		<p class="post-summary">第二篇範例文章
+title = &lsquo;Post 2&rsquo;
+date = 2023-02-15T10:00:00-07:00 …</p>
+	</div>
+
+	<p class="list-split-posts">• &emsp; • &emsp; •</p>
+	
+</div>
+
+
+
+
+
+
+		</main>
+
+		<footer>
+<div class="footer-container">
+    <hr class="footer-topborder">
+
+    <div class="footer-content">
+        <div class="contact">
+        
+            <p>
+                Contact:
+                <a href="mailto:pen@penyt.com">pen@penyt.com</a> 
+            </p>
+        
+        </div>
+    
+        <div class="copyright">
+            
+                <p> © 2024-2025 Penyt. All rights reserved. </p>
+            
+        </div>
+    </div>
+
+
+</hr>
+
+</footer>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+<!-- header 包含 Title + Menu -->
+<div class="header-container">
+    <h1><a class=header-site-title href="/">{{ site.Title }}</a></h1>
+	<div class="media-block">
+		<button class="toggle toggle-place2" aria-label="darkModeToggle">☀︎</button>
+
+		<button class="menu-toggle" aria-label="開啟菜單">☰</button>
+		{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+	</div>
+</div>
+

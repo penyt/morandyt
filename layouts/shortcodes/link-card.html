@@ -1,0 +1,15 @@
+{{ $name := .Get "name" }} {{ $desc := .Get "desc" }} {{ $link := .Get "link" }}
+{{ $img := .Get "img" }}
+
+<!-- 格式:   link-card name="" desc="" link="" img=""    -->
+
+<a href="{{ $link }}" class="card-container" target="_blank">
+	<div class="card-content">
+		<n>{{ $name }}</n>
+		<p>⋙ {{ $desc }}</p>
+		<u>{{ $link }}</u>
+	</div>
+	{{ if ne $img "" }}
+		<img src="{{ $img }}" alt="{{ $name }}" class="card-img" />
+	{{ end }}
+</a>

@@ -1,0 +1,82 @@
+<!-- {{- $taxonomy := .taxonomy | default "categories" }} 
+{{- $page := .page }} 
+{{- with $page.GetTerms $taxonomy }}
+<div class="categories">
+	<ul class="cat-ul">
+		{{- range . }} 
+			{{- $term := .LinkTitle | lower }}
+			{{- $data := index site.Data.categories $term }}
+			{{- $icon := $data.icon | default "" }}
+			{{- $color := $data.color | default "#222" }}
+			{{- $bg := $data.bgColor | default "#eee" }}
+
+		<li>
+			<a
+				href="{{ .RelPermalink }}"
+				style="color: {{ $color }}; background-color: {{ $bg }};"
+				class="cat-a"
+			>
+				{{ $icon }} 
+				{{ $term }}
+			</a>
+		</li>
+		{{- end }}
+	</ul>
+</div>
+{{- end }} -->
+{{- $taxonomy := .taxonomy | default "categories" }} 
+{{- $all := .all | default false }}
+{{- if $all }}
+	{{- with site.Taxonomies.categories }}
+	<div class="home-cat-title">
+		<h1>{{ T "home.allcategories" }}</h1>
+	</div>
+	<div class="categories">
+		<ul class="cat-ul">
+			{{- range $term, $pages := . }}
+				{{- $termLower := $term | lower }}
+				{{- $data := index site.Data.categories $termLower }}
+				{{- $icon := $data.icon | default "" }}
+				{{- $color := $data.color | default "#222" }}
+				{{- $bg := $data.bgColor | default "#eee" }}
+
+				<li>
+					<a
+						href="{{ "/categories/" | relLangURL }}{{ $term | urlize }}"
+						style="color: {{ $color }}; background-color: {{ $bg }};"
+						class="cat-a"
+					>
+						{{ $icon }} {{ $term }}
+					</a>
+				</li>
+			{{- end }}
+		</ul>
+	</div>
+	{{- end }}
+{{- else }}
+	{{- $page := .page }} 
+	{{- with $page.GetTerms $taxonomy }}
+	<div class="categories">
+		<ul class="cat-ul">
+			{{- range . }} 
+				{{- $term := .LinkTitle | lower }}
+				{{- $data := index site.Data.categories $term }}
+				{{- $icon := $data.icon | default "" }}
+				{{- $color := $data.color | default "#222" }}
+				{{- $bg := $data.bgColor | default "#eee" }}
+
+				<li>
+					<a
+						href="{{ .RelPermalink }}"
+						style="color: {{ $color }}; background-color: {{ $bg }};"
+						class="cat-a"
+					>
+						{{ $icon }} 
+						{{ $term }}
+					</a>
+				</li>
+			{{- end }}
+		</ul>
+	</div>
+	{{- end }}
+{{- end }}

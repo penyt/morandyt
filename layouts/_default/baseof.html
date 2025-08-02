@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html 
+	lang="{{ site.Language.LanguageCode }}" 
+	dir="{{ or site.Language.LanguageDirection `ltr` }}" 
+	data-default-color="{{ .Site.Params.defaultColorMode }}" 
+	class="{{ .Site.Params.themeColor }}"
+	data-giscus-light="{{ .Site.Params.comments.giscus.lightTheme }}"
+	data-giscus-dark="{{ .Site.Params.comments.giscus.darkTheme }}"
+>
+	<head>
+		{{ partial "head.html" . }}
+	</head>
+
+	<!-- <body class="{{ .Site.Params.defaultColorMode }} {{ .Site.Params.themeColor }}">  -->
+		<!--body的組成：header、main、footer-->
+	<body  >
+		<a id="gototop" href="javascript:scroll(0,0)"></a>
+
+		<header>{{ partial "header.html" . }}</header>
+
+		<main class="main"> <!--main由【home、list、single.html】個別定義出在【首頁、列表、單篇文章】的情況-->
+			{{ block "main" . }}{{ end }}
+		</main>
+
+		<footer>{{ partial "footer.html" . }}</footer>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+{{ $paginator := .paginator }}
+<div class="list-posts">
+	{{ range $paginator.Pages }}
+	<div class="post-box">
+		<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+		<h3 class="post-date">{{ .Date.Format "2006-01-02" }}</h3>
+		<p class="post-description">{{ .Description }}</p>
+		<p class="post-summary">{{ .Summary | plainify | truncate 70 }}</p>
+	</div>
+
+	<p class="list-split-posts">• &emsp; • &emsp; •</p>
+	{{ end }}
+</div>
+
+{{ if gt $paginator.TotalPages 1 }}
+<div class="pagination">
+	{{ if $paginator.HasPrev }}
+		<a href="{{ $paginator.Prev.URL }}">← </a>
+	{{ end }}
+
+	{{ range $paginator.Pagers }}
+		<a href="{{ .URL }}" class="{{ if eq . $paginator }}page-active{{ end }}">
+			{{ .PageNumber }}
+		</a>
+	{{ end }}
+
+	{{ if $paginator.HasNext }}
+		<a href="{{ $paginator.Next.URL }}"> →</a>
+	{{ end }}
+</div>
+{{ end }}

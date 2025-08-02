@@ -1,0 +1,24 @@
+[backtohome]
+	other = "回首頁"
+
+[home]
+	[home.allcategories]
+		other = "所有分類"
+	[home.allposts]
+		other = "所有文章"
+
+[single]
+	[single.tableOfContents]
+		other = "目錄"
+
+[footer]
+	[footer.contact]
+		other = "聯絡我："
+	[footer.copyright]
+		other = "。 版權所有，保留一切權利。"
+
+[notFound]
+	[notFound.error]
+		other = "錯誤"
+	[notFound.notexist]
+		other = "頁面不存在"
