@@ -1,7 +1,7 @@
 /public/
 /resources/
-/themes/morandyt/exampleSite/public/
-/themes/morandyt/exampleSite/resources/
+/exampleSite/public/
+/exampleSite/resources/
 .hugo_build.lock
 .DS_Store
 Thumbs.db
