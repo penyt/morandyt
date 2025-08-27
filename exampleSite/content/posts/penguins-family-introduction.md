@@ -1,13 +1,14 @@
 +++
-title = 'Introductions'
-date = 2024-07-15T09:00:00-07:00
+title = "企鵝的家族介紹（中文測試）"
+date = 2022-09-29T09:00:00-07:00
 draft = false
-tags = ['penguin', 'wiki']
+tags = ['企鵝', '維基百科']
 categories = ['avocado','penguin','fox','orange']
-description = 'all about penguins'
+description = '關於企鵝的家族'
 tocStyle = 'none'
 author = 'pen'
 authorNote = 'Hello I am Pen'
+authorImg = '/img/penlike.png'
 +++
 
 # 企鵝
@@ -18,7 +19,7 @@ authorNote = 'Hello I am Pen'
 ## 特徵
 企鵝可說是現時最不怕冷的鳥。牠全身羽毛密佈，皮下脂肪厚達二至三公分，這種特殊的保溫構造，使牠在冰天雪地中，仍然能夠自在生活。
 
-曾分布於北極地區、現已滅絕的大海雀可能和企鵝一樣耐寒，而且兩者外表相似，曾經被誤認有親緣關係，使得在發現海雀時，歐洲人對其的命名和企鵝也相同。[1]
+曾分布於北極地區、現已滅絕的大海雀可能和企鵝一樣耐寒，而且兩者外表相似，曾經被誤認有親緣關係，使得在發現海雀時，歐洲人對其的命名和企鵝也相同。
 
 企鵝擁有其他鳥類的共同特徵：身上擁有羽毛、尖而突出的堅硬鳥喙及有爪與鱗片的雙腳。但跟其他鳥類不同，因為翅膀的演化，使牠們無法飛行，牠們也不像其他不擅於飛行的走禽（如雞、鴕鳥），因為身體圓胖而不擅於奔跑。但企鵝的趾間有蹼，翅膀也演化成槳狀。這樣的身體結構讓企鵝成為善泳的動物。
 
@@ -53,4 +54,13 @@ Otocyon - 大耳狐
 ### 灰狐屬
 Urocyon - 灰狐、島嶼灰狐
 ### 狐屬 
-Vulpes - 11種公眾口中的狐狸，包括赤狐、北極狐
+Vulpes - 11種公眾口中的狐狸，包括赤狐、北極狐  
+
+{{< warning "red" "Be aware of red foxxie \n Foxxie say hi 👋" >}}
+{{< warning "yellow" "Be aware of yellow foxxie" >}}
+{{< warning "green" "Be aware of green foxxie" >}}
+{{< warning "blue" "Be aware of blue foxxie" >}}
+
+
+---
+參考資料：維基百科

@@ -1,0 +1,25 @@
+order = ["GitHub", "Discord", "X", "YouTube", "Sponsor"]
+
+[GitHub]
+	icon = "features/github.svg" # static/img/github.png
+	url = "https://github.com/penyt"
+	bgColor = "#eee"
+
+[YouTube]
+	icon = "features/youtube.svg"
+	url = "https://youtube.com"
+	bgColor = "#eee"
+
+[X]
+	icon = "features/x.svg"
+	url = "https://x.com"
+	bgColor = "#eee"
+
+[Discord]
+	icon = "features/discord.svg"
+	url = "https://discord.com"
+	bgColor = "#eee"
+
+[Sponsor]
+	icon = "features/buymeacoffee.svg"
+	bgColor = "#eee"

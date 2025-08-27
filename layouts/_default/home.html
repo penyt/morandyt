@@ -28,17 +28,24 @@
     <br>
 {{ end }}
 
-
-
-{{ if .Site.Params.home.allcategories }}
-	{{ partial "categories.html" (dict "all" true) }}
+{{ if .Site.Params.home.features }}
+	<div class="home-feat">
+		{{ partial "features.html" (dict "all" true) }}
+	</div>
 {{ end }}
 
 
+{{ if .Site.Params.home.allcategories }}
+	<div class="home-cat">
+	{{ partial "categories.html" (dict "all" true) }}
+	</div>
+{{ end }}
+
+
+{{ if .Site.Params.home.allposts }}
 <div class="home-post-title">
 	<h1>{{ T "home.allposts" }}</h1>
 </div>
-{{ if .Site.Params.home.allposts }}
     {{ $paginator := .Paginate (site.RegularPages.ByDate.Reverse) }}
 	{{ partial "pages.html" (dict "paginator" $paginator) }}
 {{end}}

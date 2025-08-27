@@ -1,5 +1,6 @@
-/* ============================================ */
-/* single.html */
+.single-head {
+	padding: 0 20px;
+}
 .single-title {
 	text-align: center;
 	margin-top: 40px;
@@ -8,6 +9,7 @@
 }
 .single-desc {
 	margin: 0;
+	text-align: center;
 }
 .single-date {
 	text-align: center;
@@ -16,23 +18,22 @@
 }
 
 .single-content-container {
-	// border: 1px solid #ccc;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: stretch;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 20px;
+	width: 100%;
 }
 
 .single-left {
-	// border: 2px solid var(--header-border);
 	width: 20%;
+	padding-right: 15px;
 }
 
-.single-content {
-	// background-color: rgb(217, 237, 255);
+.single-content-box {
 	width: 60%;
 	// max-width: 840px;
 	// width: 100%;
@@ -40,6 +41,24 @@
 	// margin: 0 20px;
 	word-break: break-word;
 	overflow-wrap: break-word;
+}
+@media screen and (max-width: 768px) {
+	.single-content-box {
+		width: 100%;
+		padding: 0;
+		word-break: break-word;
+		overflow-wrap: break-word;
+	}
+}
+
+.single-content{
+	width: 100%;
+}
+
+.single-content img {
+	max-width: 100%;
+	height: auto;
+	display: block;
 }
 
 .single-right {
@@ -98,20 +117,13 @@
 		padding: 0 1rem;
 		list-style-type: none;
 		counter-reset: item;
-		// li a:first-of-type::before {
-		// 	counter-increment: item;
-		// 	content: counters(item, ".") ". ";
-		// 	font-weight: bold;
-		// 	margin-right: 5px;
-		// 	color: var(--text-color);
-		// }
 		li a {
 			color: var(--text-color);
 		}
 	}
 }
 
-/* toc-style: "order" */
+// toc-style: "order"
 .toc-style-order #TableOfContents ul {
 	list-style-type: none;
 	counter-reset: item;
@@ -124,7 +136,7 @@
 	color: var(--text-color);
 }
 
-/* toc style: "dot" */
+// toc style: "dot"
 .toc-style-dot #TableOfContents ul {
 	list-style-type: disc;
 	padding-left: 1.5rem;
@@ -132,7 +144,7 @@
 .toc-style-dot #TableOfContents li a:first-of-type::before {
 	content: none;
 }
-/* toc style: "none" */
+// toc style: "none"
 .toc-style-none #TableOfContents ul {
 	list-style-type: none;
 }
@@ -141,7 +153,7 @@
 }
 
 // TOC inline
-@media (min-width: 768px) { // more than 768px not shown
+@media (min-width: 768px) { // more than 768px not show
 	.toc-inline {
 		display: none;
 	}

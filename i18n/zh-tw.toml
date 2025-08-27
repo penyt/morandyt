@@ -10,6 +10,8 @@
 [single]
 	[single.tableOfContents]
 		other = "目錄"
+	[single.rightcat]
+		other = "所有分類"
 
 [footer]
 	[footer.contact]

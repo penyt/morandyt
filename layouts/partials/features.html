@@ -1,0 +1,33 @@
+<div class="features">
+	<ul class="feat-ul">
+
+	{{- $order := site.Data.features.order }}
+
+	{{- range $name := $order }}
+		{{- $data := index site.Data.features $name }}
+		{{- $icon   := $data.icon | default "" }}
+		{{- $bg     := $data.bgColor }}
+		{{- $href   := $data.url | default (printf "/features/%s" ($name | urlize)) }}
+
+		<li>
+
+			<a href="{{ $href | relLangURL }}" class="feat-a" target="_blank">
+
+				{{- if $icon }}
+				<div class="feat-icon-wrapper" style="background-color: {{ $bg }};">
+
+					<img src="{{ printf "img/%s" $icon | relURL }}" 
+						alt="{{ $name }}" 
+						class="feat-icon" 
+					/>
+				</div>
+				{{- end }}
+
+			</a>
+
+		</li>
+		
+	{{- end }}
+
+	</ul>
+</div>

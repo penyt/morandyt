@@ -2,18 +2,51 @@
 
 **Morandyt** is a minimal Hugo theme featuring soft Morandi-inspired color palettes.
 
+## Generate a hugo site folder (named "mywebsite")
+`hugo new site mywebsite`
+
+default folder structure:
+.
+├── archetypes
+│   └── default.md
+├── assets
+├── content
+├── data
+├── hugo.toml
+├── i18n
+├── layouts
+├── static
+└── themes
+
 ## 📦 Installation
+First, navigate to your website's directory.
+`cd mywebsite`
 
-Add this theme as a Git submodule (recommended):
-
+Add this theme as a Git submodule:
 ```bash
 git submodule add https://github.com/yourusername/hugo-theme-morandyt.git themes/morandyt
 ```
 
-Then, in your hugo.toml (or config.toml):
+folder structure:
+.
+├── archetypes
+│   └── default.md
+├── assets
+├── content
+├── data
+├── hugo.toml
+├── i18n
+├── layouts
+├── resources
+├── static
+└── themes
+    └── morandyt
+
+Then, in your hugo.toml (or config.toml), `nano hugo.toml`, set:
 ```toml
 theme = "morandyt"
 ```
+Here's an example [hugo.toml](), and a minimalist [hugo.toml]()
 
 You can preview the example site with:
 ```sh

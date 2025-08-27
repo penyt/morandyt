@@ -10,6 +10,8 @@
 [single]
 	[single.tableOfContents]
 		other = "Table of Contents"
+	[single.rightcat]
+		other = "All Categories"
 
 [footer]
 	[footer.contact]

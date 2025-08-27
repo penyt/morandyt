@@ -1,8 +1,7 @@
 baseURL = "https://example.com/"
 languageCode = "en"
 title = "Morandyt Demo" # website main title
-theme = "morandyt"
-defaultContentLanguage = "en"
+theme = "morandyt" # theme name
 
 [params]
     author = "Penyt"
@@ -10,21 +9,24 @@ defaultContentLanguage = "en"
     keywords = ["morandyt", "penyt", "hugo"] # meta
 
 	themeColor = "morandi-blue"
-	# Choices: morandi-red, morandi-orange, morandi-yellow, morandi-green, morandi-blue, morandi-indigo, morandi-purple,
-	# red, orange, yellow, green, blue, indigo, purple, gray
+	# Choices: 
+	# 	morandi-red, morandi-orange, morandi-yellow, morandi-green, morandi-blue, morandi-indigo, morandi-purple,
+	# 	red, orange, yellow, green, blue, indigo, purple, gray
 	defaultColorMode = "dark" # Choices: light, dark
 
 
     [params.home]
-        img = "img/bg.png"
+        img = "img/bg.png" # static/img/bg.png
         imgtitle = "IMG TITLE"
         imgdescription = "IMG DESCRIPTION"
 
         content = true # show content of content/_index.md
 
-		allcategories = true # show all categories feature on the homepage
+		features = true # show feature section on the homepage
 
-        allposts = true # show all posts feature on the homepage
+		allcategories = true # show all categories section on the homepage
+
+        allposts = true # show all posts section on the homepage
 
     [params.footer]
         contact = "pen@penyt.com" # email
@@ -32,6 +34,7 @@ defaultContentLanguage = "en"
 
     [params.supports]
         likecoinID = "ytpenpen"
+		
         buymeacoffeeID = "penyt"
         buymeacoffeeFont = ""
         buymeacoffeeFontColor = ""
@@ -46,7 +49,7 @@ defaultContentLanguage = "en"
         [params.comments.disqus]
             shortname = ""
         [params.comments.giscus]
-            repo = "penyt/MyWebsite-comments" # change to your repo name
+            repo = "penyt/MyWebsite-comments" # put your repo name
             repo_id = ""
             category = ""
             category_id = ""
@@ -60,7 +63,7 @@ defaultContentLanguage = "en"
     posts = "/p/:title/"
 
 [pagination]
-	pagerSize = 5
+	pagerSize = 3
 
 [menu]
     [[menu.main]]
@@ -89,16 +92,12 @@ defaultContentLanguage = "en"
         weight = 5
     
 
-[services]
-    [services.googleAnalytics]
-        id = ''
-
-[taxonomies]
+[taxonomies] # recommend not to change
 	tag = "tags"
 	category = "categories"
 
 [markup]
-	[markup.highlight]
+	[markup.highlight] # style of code block in md
 		noClasses = false
 		guessSyntax = true
 		style = "github-dark" # find styles here: https://gohugo.io/content-management/syntax-highlighting/#style
@@ -109,5 +108,5 @@ defaultContentLanguage = "en"
 		startLevel = 2
 		endLevel = 6
 
-[outputs] # use for searching
+[outputs] # use for searching, recommend not to change
 	home = ["HTML", "RSS", "json"]

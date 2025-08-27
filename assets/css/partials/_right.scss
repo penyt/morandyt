@@ -3,7 +3,6 @@
 	flex-direction: column;
 	align-items: center;
 	margin-top: 50px;
-	margin-bottom: 50px;
 }
 .right-author-img {
 	width: 100px;
@@ -21,7 +20,65 @@
 	margin-top: 5px;
 	font-style: italic;
 }
-
+// -------------- categories -----------------------
+.right-cat-title {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 0;
+}
 .right-cat-ul {
 	margin: 0;
+}
+// --------------------------------------------------
+.right-cat-title {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 0 0 0.5em;
+	text-align: left;
+	margin-top: 50px;
+}
+
+/* 列表 */
+.right-cat-ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.right-cat-ul li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.right-cat-ul li a {
+	display: inline-block;
+	padding: 4px 10px;
+	border-radius: 999px;
+	background: rgba(255,255,255,0.08);
+	text-decoration: none;
+	transition: background 0.2s, transform 0.15s;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.right-cat-ul li a:hover {
+	background: rgba(255,255,255,0.15);
+	transform: translateY(-1px);
+}
+
+.right-cat-ul li span {
+	background: var(--link-color, #9fb7ff);
+	color: #111;
+	font-size: 0.8em;
+	padding: 2px 6px;
+	border-radius: 999px;
+	min-width: 22px;
+	text-align: center;
 }

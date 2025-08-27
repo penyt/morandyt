@@ -12,20 +12,21 @@
 	{{ end }}
 </div>
 
+<div id="all-posts"></div> 
 {{ if gt $paginator.TotalPages 1 }}
 <div class="pagination">
 	{{ if $paginator.HasPrev }}
-		<a href="{{ $paginator.Prev.URL }}">← </a>
+		<a href="{{ $paginator.Prev.URL }}#all-posts">← </a>
 	{{ end }}
 
 	{{ range $paginator.Pagers }}
-		<a href="{{ .URL }}" class="{{ if eq . $paginator }}page-active{{ end }}">
+		<a href="{{ .URL }}#all-posts" class="{{ if eq . $paginator }}page-active{{ end }}">
 			{{ .PageNumber }}
 		</a>
 	{{ end }}
 
 	{{ if $paginator.HasNext }}
-		<a href="{{ $paginator.Next.URL }}"> →</a>
+		<a href="{{ $paginator.Next.URL }}#all-posts"> →</a>
 	{{ end }}
 </div>
 {{ end }}

@@ -1,11 +1,9 @@
 {{ define "main" }}
-<!--【列表】時的main-->
 
 <!--DEBUG-->
-<p align="center">this page uses layouts/_default/list.html</p>
+<!-- <p align="center">this page uses layouts/_default/list.html</p> -->
 
 <div class="list-content">
-	<!--上方的標題-->
 	<h1>{{ .Title }}</h1>
 	{{ .Content }}
 	<!--posts/_index.md 、 about/_index.html 、 contact/_index.html-->
@@ -14,5 +12,4 @@
 {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
 {{ partial "pages.html" (dict "paginator" $paginator) }}
 
-<!--define main 結尾-->
 {{ end }}

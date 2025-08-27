@@ -12,13 +12,13 @@
 	</head>
 
 	<!-- <body class="{{ .Site.Params.defaultColorMode }} {{ .Site.Params.themeColor }}">  -->
-		<!--body的組成：header、main、footer-->
+		<!--body：header、main、footer-->
 	<body  >
 		<a id="gototop" href="javascript:scroll(0,0)"></a>
 
 		<header>{{ partial "header.html" . }}</header>
 
-		<main class="main"> <!--main由【home、list、single.html】個別定義出在【首頁、列表、單篇文章】的情況-->
+		<main class="main">
 			{{ block "main" . }}{{ end }}
 		</main>
 

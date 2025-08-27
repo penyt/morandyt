@@ -1,19 +1,25 @@
 <div class="single-right">
+
+	{{ if .Params.author }}
 	<div class="right-author">
+		{{ if .Params.authorImg }}
+			<img src="{{ .Params.authorImg }}" alt="" class="right-author-img">
+		{{ end }}
 
-		<img src="/img/penlike.png" alt="" class="right-author-img">
-
-		<p class="right-author-name">
-			{{ .Params.author }}
-		</p>
-
-		<p class="right-author-note">
-			{{ .Params.authorNote }}
-		</p>
-
-	</div>
+			<p class="right-author-name">
+				{{ .Params.author }}
+			</p>
+			
+			{{ if .Params.authorNote }}
+			<p class="right-author-note">
+				{{ .Params.authorNote }}
+			</p>
+			{{ end }}
+		</div>
+	{{ end }}
 
 	<div class="right-cat">
+		<p class="right-cat-title">{{ T "single.rightcat" }}</p>
 		<ul class="right-cat-ul">
 		{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
 			<li>

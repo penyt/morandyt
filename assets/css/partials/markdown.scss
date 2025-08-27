@@ -45,27 +45,19 @@ table:not(.lntable) { // except for code block table
 	box-shadow: 5px 5px 5px var(--shadow),
 				-5px 5px 5px var(--shadow);
 	border-radius: 10px;
+	overflow: hidden;
 }
 
 table:not(.lntable) thead {
 	background-color: var(--header-bg);
 }
 
-table:not(.lntable) thead tr {
-	border-radius: 10px;
-}
 
 table:not(.lntable) thead th {
 	text-align: left;
 	padding: 0.75rem 1rem;
 	font-weight: 600;
 	color: #111827;
-}
-table:not(.lntable) thead th:first-child {
-	border-top-left-radius: 10px;
-}
-table:not(.lntable) thead th:last-child {
-	border-top-right-radius: 10px;
 }
 
 table:not(.lntable) tbody tr td {

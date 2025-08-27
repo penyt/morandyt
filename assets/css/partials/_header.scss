@@ -1,53 +1,52 @@
 // header + menu
 .header-container {
-	display: flex; /* 啟用 Flexbox 布局 */
+	display: flex;
 	position: relative;
-	justify-content: space-between; /* 使元素兩端對齊，並在它們之間創建空隙 */
-	align-items: center; /* 垂直居中對齊元素 */
+	justify-content: space-between;
+	align-items: center;
 	// width: auto;
 	max-width: 1200px;
-	margin: 0 auto; // 置中
+	margin: 0 auto;
 	padding: 0 30px;
 }
 
 .header-site-title {
-	color: #000; /* 文字顏色 */
-	font-weight: bold; /* 文字加粗 */
+	color: #000;
+	font-weight: bold;
 	font-size: 28px;
 }
 
 .header-site-title:hover {
-	color: #494949; /* 滑鼠懸停時的文字顏色 */
+	color: #494949;
 	text-decoration: none;
 }
 
 .menu {
 	display: flex;
-	flex-direction: row; /* 水平排列 */
+	flex-direction: row;
 	align-items: center;
 }
 .menu-list {
-	display: flex; /* 使用 Flexbox 讓列表橫向排列 */
-	list-style: none; /* 移除項目符號 */
-	margin: 0; /* 移除外邊距 */
-	padding: 0; /* 移除內邊距 */
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 	width: auto;
 }
 
 .menu-list li {
-	margin-left: 40px; /* 設定列表項目之間的間隔 */
+	margin-left: 40px;
 }
 
 .menu-list li a {
-	color: #000; /* 文字顏色 */
-	font-weight: bold; /* 文字加粗 */
+	color: #000;
+	font-weight: bold;
 }
 .menu-list li a:hover {
-	color: #6d6d6d; /* 滑鼠懸停時的文字顏色 */
+	color: #6d6d6d;
 	text-decoration: underline;
 }
 .menu-toggle {
-	/* 一般時候（螢幕大），不顯示 */
 	display: none;
 }
 .toggle {
@@ -59,7 +58,7 @@
 	margin-left: 30px;
 }
 .toggle:hover {
-	color: #ffffff; /* 滑鼠懸停時的文字顏色 */
+	color: #ffffff;
 }
 .toggle-place1 {
 	display: block !important;
@@ -70,15 +69,15 @@
 
 @media screen and (max-width: 768px) {
 	.menu {
-		display: flex; /* 默認隱藏 */
+		display: flex;
 		position: absolute;
-		flex-direction: column; /* 垂直排列 */
-		justify-content: center; /* 垂直居中 */
-		align-items: center; /* 水平居中 */
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
 		top: calc(100% + 5px);
 		right: 0;
-		left: 0; /* 讓容器占滿寬度 */
+		left: 0;
 
 		padding: 1rem;
 		border: 1px solid #ffffff00;
@@ -87,7 +86,7 @@
 		z-index: 1000;
 
 		visibility: hidden;
-		transition: opacity 0.3s ease, visibility 0.3s; /* 過渡效果 */
+		transition: opacity 0.3s ease, visibility 0.3s;
 		opacity: 0;
 	}
 	.menu.open {
@@ -105,11 +104,11 @@
 		padding: 0;
 		margin: 0;
 
-		gap: 1.5rem; /* 列表項之間的間距 */
-		text-align: center; /* 列表文字置中 */
+		gap: 1.5rem;
+		text-align: center;
 	}
 	.menu-list li {
-		margin-left: 0; /* 設定列表項目之間的間隔 */
+		margin-left: 0;
 	}
 	.menu-toggle {
 		display: block;
@@ -117,10 +116,10 @@
 		border: none;
 		background: none;
 		cursor: pointer;
-		transition: transform 0.3s ease; /* 添加旋轉動畫 */
+		transition: transform 0.3s ease;
 	}
 	.menu-toggle.open {
-		transform: rotate(90deg); /* 逆時針旋轉 90 度 */
+		transform: rotate(90deg);
 	}
 	.toggle-place1 {
 		display: none !important;

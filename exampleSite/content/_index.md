@@ -13,6 +13,8 @@ If you like this hugo theme, give us a little ⭐️ on github!
 
 {{< link-card name="penyt GitHub" desc="this is my github link" link="https://github.com/penyt" img="https://raw.githubusercontent.com/penyt/Copyright-and-License/refs/heads/main/LOGO/penlike.png" >}}
 
+{{< link-card name="404 Page" desc="demo of 404 page" link="http://localhost:1313/404" >}}
+
 By the way, I have made a tmux script called [tmux-pencil](https://github.com/penyt/tmux-pencil). You may take a look at it on my GitHub. It is a simple bash script that can help you easily set up your `.tmux.conf` without installing any tmux plugin.  
 
 

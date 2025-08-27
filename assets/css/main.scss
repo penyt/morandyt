@@ -2,6 +2,7 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	line-height: 1.5;
 }
 
 html {
@@ -105,6 +106,13 @@ a:hover {
 	border-radius: 50px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.search-title {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	line-height: 1.2;
+	padding: 0 20px;
+}
 .search-content {
 	display: flex;
 	flex-direction: column;
@@ -118,7 +126,16 @@ a:hover {
 .search-results {
 	max-width: 1000px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 40px;
+	list-style: none;
+}
+.search-results li {
+	list-style-type: none;
+}
+.search-results li::before {
+	content: "✎";
+	margin-right: 0.5em;
+	color: var(--a-tag-color);
 }
 
 .reserve-blank {
@@ -130,9 +147,17 @@ mark {
 	color: black;
 	font-weight: bold;
 }
-.not-found {
+#not-found {
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 40px;
+}
+#error-img {
+	margin: 15px; 
+	max-width: 300px; 
+}
+#error-img img { 
+	width: 100%; 
+	height: auto; 
 }
 
 @import "theme";
@@ -143,9 +168,11 @@ mark {
 @import "partials/markdown";
 @import "partials/categories";
 @import "partials/right";
+@import "partials/features";
 
 @import "shortcodes/gist-title";
 @import "shortcodes/link-card";
+@import "shortcodes/warning";
 
 @import "home";
 @import "list";

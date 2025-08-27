@@ -33,14 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	setGiscusTheme(isDark ? darkTheme : lightTheme);
 	
 	toggleButtons.forEach((btn) => {
-		btn.textContent = isDark ? "☀︎" : "☾";
+		btn.textContent = isDark ? "✸" : "☾";
 
 		btn.addEventListener("click", () => {
 			const nowDark = html.classList.toggle(darkClass);
 			localStorage.setItem("theme", nowDark ? darkClass : "light");
 
 			toggleButtons.forEach((b) => {
-				b.textContent = nowDark ? "☀︎" : "☾";
+				b.textContent = nowDark ? "✸" : "☾";
 			});
 
 		

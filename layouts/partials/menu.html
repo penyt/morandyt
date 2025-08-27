@@ -11,13 +11,13 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-	<nav class="menu"> <!--"menu在大螢幕目前沒用到"-->
+	<nav class="menu">
 		<ul class="menu-list">
 		{{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
 			
 		
 		</ul>
-		<button class="toggle toggle-place1" aria-label="darkModeToggle">☀︎</button>
+		<button class="toggle toggle-place1" aria-label="darkModeToggle">✸</button>
 	</nav>
 {{- end }}
 

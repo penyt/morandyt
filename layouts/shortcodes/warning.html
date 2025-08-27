@@ -1,0 +1,18 @@
+{{ $colorName := .Get 0 | lower }}
+{{ $warningText := replace (.Get 1) "\\n" "<br>" | safeHTML }}
+
+{{ $colors := dict
+    "red"    (dict "bg" "#5700008d" "border" "#ff0000" "text" "#ffffff")
+    "yellow" (dict "bg" "#cab6007e" "border" "#ffc107" "text" "#000000")
+    "green"  (dict "bg" "#004d0087" "border" "#28a745" "text" "#ffffff")
+    "blue"   (dict "bg" "#002b5b8d" "border" "#007bff" "text" "#ffffff")
+}}
+
+{{ $selected := index $colors $colorName | default (index $colors "red") }}
+
+<div class="warning-box"
+	style="--warning-box-bg: {{ $selected.bg }};
+            --warning-box-text: {{ $selected.text }};
+            --warning-box-border: {{ $selected.border }};">
+	<p>{{ $warningText }}</p>
+</div>
