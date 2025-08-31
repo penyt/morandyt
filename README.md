@@ -26,7 +26,7 @@ cd mywebsite
 
 Add this theme as a Git submodule:
 ```bash
-git submodule add https://github.com/yourusername/hugo-theme-morandyt.git themes/morandyt
+git submodule add https://github.com/penyt/morandyt.git themes/morandyt
 ```
 
 folder structure:  
@@ -48,7 +48,7 @@ Then, in your hugo.toml, `nano hugo.toml`, set:
 ```toml
 theme = "morandyt"
 ```
-Here's an example [hugo.toml](), and a minimalist [hugo.toml]()
+Here's an example [hugo.toml](https://github.com/penyt/morandyt/blob/main/exampleSite/hugo.toml).  
 
 You can preview the example site with:
 ```sh
