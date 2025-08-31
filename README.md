@@ -1,6 +1,6 @@
 # Morandyt
 
-**Morandyt** is a minimal Hugo theme featuring soft Morandi-inspired color palettes.
+**Morandyt** is a minimal Hugo theme featuring soft Morandi-inspired color palettes.  
 ![screenshot](https://github.com/penyt/morandyt/blob/edd90e5846f37fda036f8ddfaf6a9d9d784d7498/images/screenshot.png)
 
 ## Generate a hugo site folder (named "mywebsite")
