@@ -8,7 +8,7 @@
 default folder structure:  
 .  
 ├── archetypes  
- │   └── default.md  
+│   └── default.md  
 ├── assets  
 ├── content  
 ├── data  
@@ -32,7 +32,7 @@ git submodule add https://github.com/yourusername/hugo-theme-morandyt.git themes
 folder structure:  
 .  
 ├── archetypes  
- │   └── default.md  
+│   └── default.md  
 ├── assets  
 ├── content  
 ├── data  

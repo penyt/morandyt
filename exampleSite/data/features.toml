@@ -3,23 +3,25 @@ order = ["GitHub", "Discord", "X", "YouTube", "Sponsor"]
 [GitHub]
 	icon = "features/github.svg" # static/img/github.png
 	url = "https://github.com/penyt"
-	bgColor = "#eee"
+	bgColor = "#5858589b"
 
 [YouTube]
 	icon = "features/youtube.svg"
 	url = "https://youtube.com"
-	bgColor = "#eee"
+	color = "#FF0033"
+	bgColor = "#5858589b"
 
 [X]
 	icon = "features/x.svg"
 	url = "https://x.com"
-	bgColor = "#eee"
+	bgColor = "#5858589b"
 
 [Discord]
 	icon = "features/discord.svg"
 	url = "https://discord.com"
-	bgColor = "#eee"
+	color = "#5865F2"
+	bgColor = "#5858589b"
 
 [Sponsor]
 	icon = "features/buymeacoffee.svg"
-	bgColor = "#eee"
+	bgColor = "#ffe43867"

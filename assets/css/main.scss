@@ -11,6 +11,8 @@ html {
 	--a-tag-color: rgb(28, 38, 142);
 	--a-tag-hover-color: rgb(100, 100, 200);
 	--shadow: #dddddd;
+	--copy-code-shadow: #42424285;
+	--right-capsule: rgba(147, 147, 147, 0.381);
 }
 
 html.dark {
@@ -19,6 +21,8 @@ html.dark {
 	--a-tag-color: rgb(154, 154, 255);
 	--a-tag-hover-color: rgb(214, 214, 255);
 	--shadow: #505050;
+	--copy-code-shadow: #ffffff85;
+	--right-capsule: rgba(255, 255, 255, 0.08);
 }
 
 // -------------------------------

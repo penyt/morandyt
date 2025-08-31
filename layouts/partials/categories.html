@@ -1,29 +1,3 @@
-<!-- {{- $taxonomy := .taxonomy | default "categories" }} 
-{{- $page := .page }} 
-{{- with $page.GetTerms $taxonomy }}
-<div class="categories">
-	<ul class="cat-ul">
-		{{- range . }} 
-			{{- $term := .LinkTitle | lower }}
-			{{- $data := index site.Data.categories $term }}
-			{{- $icon := $data.icon | default "" }}
-			{{- $color := $data.color | default "#222" }}
-			{{- $bg := $data.bgColor | default "#eee" }}
-
-		<li>
-			<a
-				href="{{ .RelPermalink }}"
-				style="color: {{ $color }}; background-color: {{ $bg }};"
-				class="cat-a"
-			>
-				{{ $icon }} 
-				{{ $term }}
-			</a>
-		</li>
-		{{- end }}
-	</ul>
-</div>
-{{- end }} -->
 {{- $taxonomy := .taxonomy | default "categories" }} 
 {{- $all := .all | default false }}
 {{- if $all }}
@@ -37,8 +11,8 @@
 				{{- $termLower := $term | lower }}
 				{{- $data := index site.Data.categories $termLower }}
 				{{- $icon := $data.icon | default "" }}
-				{{- $color := $data.color | default "#222" }}
-				{{- $bg := $data.bgColor | default "#eee" }}
+				{{- $color := $data.color | default "#000" }}
+				{{- $bg := $data.bgColor | default "#959595" }}
 
 				<li>
 					<a
@@ -62,8 +36,8 @@
 				{{- $term := .LinkTitle | lower }}
 				{{- $data := index site.Data.categories $term }}
 				{{- $icon := $data.icon | default "" }}
-				{{- $color := $data.color | default "#222" }}
-				{{- $bg := $data.bgColor | default "#eee" }}
+				{{- $color := $data.color | default "#000" }}
+				{{- $bg := $data.bgColor | default "#959595" }}
 
 				<li>
 					<a

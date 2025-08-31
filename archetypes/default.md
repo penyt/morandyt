@@ -5,7 +5,8 @@ draft = true
 tags = ['','']
 categories = ['','']
 description = ''
-tocStyle = ''
-author = ''
+tocStyle = '' # none, dot, order
+author = 'pen'
 authorNote = ''
+authorImg = '/img/penlike.png' # static/
 +++

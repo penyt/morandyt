@@ -38,7 +38,6 @@
 	margin-top: 50px;
 }
 
-/* 列表 */
 .right-cat-ul {
 	list-style: none;
 	margin: 0;
@@ -60,7 +59,7 @@
 	display: inline-block;
 	padding: 4px 10px;
 	border-radius: 999px;
-	background: rgba(255,255,255,0.08);
+	background: var(--right-capsule);
 	text-decoration: none;
 	transition: background 0.2s, transform 0.15s;
 
@@ -69,7 +68,8 @@
 	text-overflow: ellipsis;
 }
 .right-cat-ul li a:hover {
-	background: rgba(255,255,255,0.15);
+	background: var(--header-bg);
+	background: color-mix(in srgb, var(--header-bg) 50%, transparent);
 	transform: translateY(-1px);
 }
 

@@ -1,10 +1,11 @@
 baseURL = "https://example.com/"
-languageCode = "en"
+languageCode = "en" # for meta
 title = "Morandyt Demo" # website main title
 theme = "morandyt" # theme name
+defaultContentLanguage = "en" # for theme language
 
 [params]
-    author = "Penyt"
+    author = "Penyt" # meta & footer
     description = "hugo theme morandyt demo" # meta
     keywords = ["morandyt", "penyt", "hugo"] # meta
 
@@ -12,6 +13,7 @@ theme = "morandyt" # theme name
 	# Choices: 
 	# 	morandi-red, morandi-orange, morandi-yellow, morandi-green, morandi-blue, morandi-indigo, morandi-purple,
 	# 	red, orange, yellow, green, blue, indigo, purple, gray
+
 	defaultColorMode = "dark" # Choices: light, dark
 
 
@@ -31,6 +33,7 @@ theme = "morandyt" # theme name
     [params.footer]
         contact = "pen@penyt.com" # email
         startYear = "2024" # Can be empty
+		authorImage = "img/penlike.png" # static/img/author.png
 
     [params.supports]
         likecoinID = "ytpenpen"
@@ -45,7 +48,7 @@ theme = "morandyt" # theme name
 
     [params.comments]
         enable = true
-        provider = "giscus"
+        provider = "giscus" # morandyt now supports  disqus & giscus
         [params.comments.disqus]
             shortname = ""
         [params.comments.giscus]
@@ -100,7 +103,8 @@ theme = "morandyt" # theme name
 	[markup.highlight] # style of code block in md
 		noClasses = false
 		guessSyntax = true
-		style = "github-dark" # find styles here: https://gohugo.io/content-management/syntax-highlighting/#style
+		# Morandyt uses chroma-<light/dark>.css, so no style is required here.
+		# style = "github-dark" # find styles here: https://gohugo.io/content-management/syntax-highlighting/#style
 		lineNos = true
 		lineNumbersInTable = true
 

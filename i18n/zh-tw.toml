@@ -18,6 +18,10 @@
 		other = "聯絡我："
 	[footer.copyright]
 		other = "。 版權所有，保留一切權利。"
+	[footer.author]
+		other = "發表者："
+	[footer.lastupdate]
+		other = "最後更新於"
 
 [notFound]
 	[notFound.error]

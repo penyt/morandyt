@@ -1,33 +1,35 @@
-<div class="features">
-	<ul class="feat-ul">
+<ul class="feat-ul">
 
-	{{- $order := site.Data.features.order }}
+{{- $order := site.Data.features.order }}
 
-	{{- range $name := $order }}
-		{{- $data := index site.Data.features $name }}
-		{{- $icon   := $data.icon | default "" }}
-		{{- $bg     := $data.bgColor }}
-		{{- $href   := $data.url | default (printf "/features/%s" ($name | urlize)) }}
+{{- range $name := $order }}
+	{{- $data := index site.Data.features $name }}
+	{{- $icon   := $data.icon | default "" }}
+	{{- $bg     := $data.bgColor }}
+	{{- $href   := $data.url | default (printf "/features/%s" ($name | urlize)) }}
 
-		<li>
+	<li>
 
-			<a href="{{ $href | relLangURL }}" class="feat-a" target="_blank">
+		<a href="{{ $href | relLangURL }}" class="feat-a" target="_blank">
+			{{- if $icon }}
+				{{- $path := printf "static/img/%s" $icon -}}
+				{{- $raw  := readFile $path | default "" -}}
+				{{- if $raw -}}
+					{{- $svg := $raw | replaceRE `\s(width|height)="[^"]*"` `` -}}
+					{{- $svg = $svg | replaceRE `(?i)\sfill="[^"]*"` `` | replaceRE `(?i)\sstroke="[^"]*"` `` -}}
+					{{- $svg = $svg | replaceRE `<svg` `<svg fill="currentColor" stroke="none"` -}}
 
-				{{- if $icon }}
-				<div class="feat-icon-wrapper" style="background-color: {{ $bg }};">
+					<div class="feat-icon-wrapper"
+						style="{{ with $bg }}             background-color: {{ . }};     {{ end }}
+								{{ with $data.color }}    color: {{ . }};                {{ end }}">
+						{{ $svg | safeHTML }}
+					</div>
+				{{- end -}}
+			{{- end }}
+		</a>
 
-					<img src="{{ printf "img/%s" $icon | relURL }}" 
-						alt="{{ $name }}" 
-						class="feat-icon" 
-					/>
-				</div>
-				{{- end }}
+	</li>
+	
+{{- end }}
 
-			</a>
-
-		</li>
-		
-	{{- end }}
-
-	</ul>
-</div>
+</ul>

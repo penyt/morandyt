@@ -2,7 +2,7 @@ html {
 	--blockquote-bg-color: rgb(145, 145, 145);
 	--blockquote-left-color: rgb(100, 100, 100);
 	--p-code: rgb(199, 59, 59);
-	--code-bg-color: rgb(210, 210, 210);
+	--code-bg-color: rgb(231, 231, 231);
 }
 
 html.dark {
@@ -30,20 +30,51 @@ p code {
 	padding: 2px 5px;
 	font-family: monospace;
 }
-
+// ----------------------------Code Block------------------------------------
+.chroma,
+.chroma .bg {
+	background: transparent;
+}
 .chroma {
-	background-color: var(--code-bg-color);
+	background-color: var(--code-bg-color) !important;
 	border-radius: 10px;
 	padding: 0 0.5rem;
 	overflow-x: auto;
 }
 
+.codewrap.has-copy { 
+	position: relative; 
+}
+.codewrap .code-copy {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	padding: 4px 10px;
+	border: 0;
+	border-radius: 6px;
+	background: var(--code-bg-color);
+	color: var(--text-color);
+	cursor: pointer;
+	box-shadow: 0 1px 5px #1f1f1f,
+				0 1px 5px #000;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.codewrap .code-copy:hover {
+	background: rgba(0, 0, 0, 0.85);
+	color: #fff;
+	transform: translateY(-3px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25),
+				0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+// ----------------------------Table------------------------------------
 
 table:not(.lntable) { // except for code block table
 	border-spacing: 0;
 	margin: 1rem 0;
 	box-shadow: 5px 5px 5px var(--shadow),
-				-5px 5px 5px var(--shadow);
+				-5px -5px 5px var(--shadow);
 	border-radius: 10px;
 	overflow: hidden;
 }

@@ -11,8 +11,8 @@
 {{ if eq $plural "categories" }}
 	{{- $data := index site.Data.categories $term }}
 	{{- $icon := $data.icon | default "" }}
-	{{- $color := $data.color | default "#222" }}
-	{{- $bg := $data.bgColor | default "#eee" }}
+	{{- $color := $data.color | default "#000" }}
+	{{- $bg := $data.bgColor | default "#959595" }}
 	<div class="taxonomy-title">
 		<h1 class="cat-title" style="color: {{ $color }}; background-color: {{ $bg }};">{{ $icon }} {{ .Title }}</h1>
 	</div>

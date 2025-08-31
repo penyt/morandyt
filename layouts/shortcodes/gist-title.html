@@ -1,7 +1,5 @@
 {{ $title := .Get 0 }}
 
-<!-- 格式:   gist-title "title" penyt ID (檔名)    -->
-
 <div>
     <p class="gist-title"> <a href="https://gist.github.com/{{ index .Params 1 }}/{{ index .Params 2 }}" target="_blank"> {{ $title }} </a> </p>
     <script src="https://gist.github.com/{{ index .Params 1 }}/{{ index .Params 2 }}.js{{if len .Params | eq 4 }}?file={{ index .Params 3 }}{{end}}"></script>

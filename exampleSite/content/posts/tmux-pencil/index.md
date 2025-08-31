@@ -23,7 +23,7 @@ Since we're configuring tmux, it's recommended to stay inside a tmux session so 
 
 The command below will create a new session (`tpen`) with two windows (`setup` & `demo`), as some effects require multiple windows to demonstrate properly:
 
-```sh
+```bash
 tmux -f /dev/null new-session -d -s tpen -n setup \; \
 	set-option -t tpen:setup remain-on-exit on \; \
 	new-window -n demo \; \
@@ -34,7 +34,8 @@ tmux -f /dev/null new-session -d -s tpen -n setup \; \
 
 ## 2. Download & Set permission
 While in the tmux session, download the script to your home directory. You can delete it afterward.
-```sh
+```bash
+cd
 curl -o tmux-pencil.sh https://raw.githubusercontent.com/penyt/tmux-pencil/refs/heads/main/tmux-pencil.sh
 ```
 Of course, you can also copy and paste the script contents manually.

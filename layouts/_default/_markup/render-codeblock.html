@@ -1,0 +1,7 @@
+{{- $lang := .Type | default "plaintext" -}}
+{{- $html := highlight .Inner $lang -}}
+
+<div class="codewrap has-copy">
+	{{- $html | safeHTML -}}
+	<button class="code-copy" type="button" aria-label="Copy code">Copy</button>
+</div>

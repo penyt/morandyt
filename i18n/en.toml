@@ -18,6 +18,10 @@
 		other = "Contact:"
 	[footer.copyright]
 		other = ". All rights reserved."
+	[footer.author]
+		other = "Published by"
+	[footer.lastupdate]
+		other = "Last updated on"
 
 [notFound]
 	[notFound.error]
