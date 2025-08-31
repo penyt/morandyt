@@ -44,7 +44,7 @@ folder structure:
 └── themes  
     └── morandyt  
 
-Then, in your hugo.toml (or config.toml), `nano hugo.toml`, set:  
+Then, in your hugo.toml, `nano hugo.toml`, set:  
 ```toml
 theme = "morandyt"
 ```
