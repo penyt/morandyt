@@ -7,7 +7,8 @@ description = 'A clean and responsive Hugo blog theme inspired by Morandi color 
 homepage = 'https://github.com/penyt/morandyt'
 
 # If you have a running demo of the theme
-demosite = 'https://hugo-theme-morandyt.netlify.app'
+# demosite = 'https://hugo-theme-morandyt.netlify.app'
+demosite = 'https://morandyt.penyt.com'
 
 # Taxonomy terms
 tags = ['blog', 'morandi','responsive','clean','darkmode']
