@@ -1,8 +1,8 @@
-+++
-title = 'Home'
-date = 2023-01-01T08:00:00-07:00
-draft = false
-+++
++++  
+title = 'Home'  
+date = 2023-01-01T08:00:00-07:00  
+draft = false  
++++  
 
 # TITLE IN THE HOME PAGE  
 This is a Hugo Theme made by penyt, called "**Morandyt**".  The name comes from the color tone Morandi.  

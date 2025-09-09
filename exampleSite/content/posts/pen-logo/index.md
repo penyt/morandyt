@@ -1,15 +1,15 @@
-+++
-title = 'My logos'
-date = 2023-03-15T11:00:00-07:00
-draft = false
-tags = ['logo','copyright']
-categories = ['logo']
-description = 'About my logos'
-tocStyle = 'dot'
-author = 'pen'
-authorNote = ''
-authorImg = '/img/penlike.png'
-+++
++++  
+title = 'My logos'  
+date = 2023-03-15T11:00:00-07:00  
+draft = false  
+tags = ['logo','copyright']  
+categories = ['logo']  
+description = 'About my logos'  
+tocStyle = 'dot'  
+author = 'pen'  
+authorNote = ''  
+authorImg = '/img/penlike.png'  
++++  
 
 
 ## Copyright Notice for Logo

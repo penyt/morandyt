@@ -1,13 +1,14 @@
----
-title: "tmux-pencil"
-description: Tmux-pencil helps you quickly set up your own .tmux.conf from scratch.
-date: 2025-01-14T16:22:16Z
-comments: true
-categories: ["tmux", "bash"]
-tags: ["tmxu", "tmux-pencil", "bash script"]
-draft: false
-tocStyle: "none"
----
+---  
+title: "tmux-pencil"  
+description: Tmux-pencil helps you quickly set up your own .tmux.conf from scratch.  
+date: 2025-01-14T16:22:16Z  
+comments: true  
+categories: ["tmux", "bash"]  
+tags: ["tmxu", "tmux-pencil", "bash script"]  
+draft: false  
+tocStyle: "none"  
+---  
+
 # Tmux configuration setup script -- tmux-pencil
 
 This is a tool that can helps you set your tmux configuration easily. Just follow the instructions, and a kick-start .tmux.conf will be created.
