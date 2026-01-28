@@ -54,12 +54,14 @@
 	{{ partial "supports/buymeacoffee.html" . }}
 </div>
 
+{{ if and .Site.Params.comments.enable (ne .Params.comments false) }}
 <div class="single-comments">
-	{{ with .Site.Params.comments }} 
-		{{ if .enable }} 
-			{{ partial (printf "comments/%s.html" .provider) $ }} 
-		{{ end }} 
-	{{ end }}
+		<!-- {{ with .Site.Params.comments }} 
+		{{ if .enable }}  -->
+		{{ partial (printf "comments/%s.html" .provider) $ }} 
+		<!-- {{ end }} 
+		{{ end }} -->
 </div>
+{{ end }}
 
 {{ end }}

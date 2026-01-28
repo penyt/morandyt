@@ -9,7 +9,8 @@ description = 'How to change code block style in morandyt theme?'
 tocStyle = 'order'  
 author = 'pen'  
 authorNote = ''  
-authorImg = '/img/penlike.png'  
+authorImg = '/img/penlike.png'    
+comments = false
 +++  
 
 ## Folder

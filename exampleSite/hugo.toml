@@ -63,7 +63,7 @@ defaultContentLanguage = "en" # for theme language
 		placeholder = "Search for anything..."
 
 [permalinks]
-    posts = "/p/:title/"
+    posts = "/p/:slug/"
 
 [pagination]
 	pagerSize = 3

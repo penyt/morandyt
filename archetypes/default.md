@@ -1,13 +1,14 @@
 +++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
+description = ''
 draft = true  
 hidden = false
 tags = ['','']
 categories = ['','']
-description = ''
 tocStyle = '' # none, dot, order
 author = 'pen'
 authorNote = ''
-authorImg = '/img/penlike.png' # static/
+authorImg = '/img/penlike.png' # static/  
+comments = true
 +++
