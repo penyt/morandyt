@@ -9,7 +9,9 @@
 	<!--posts/_index.md 、 about/_index.html 、 contact/_index.html-->
 </div>
 	
-{{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+{{ $pages := where .Pages "Params.hidden" "!=" true }}
+{{ $paginator := .Paginate ($pages.ByDate.Reverse) }}
+<!-- {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }} -->
 {{ partial "pages.html" (dict "paginator" $paginator) }}
 
 {{ end }}

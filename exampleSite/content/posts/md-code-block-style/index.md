@@ -1,7 +1,8 @@
 +++  
 title = 'Usage of code block style in markdown'  
 date = 2025-01-14T16:22:16Z  
-draft = false  
+draft = false    
+hidden = false
 tags = ['morandyt','hugo','code block']  
 categories = ['morandyt','hugo']  
 description = 'How to change code block style in morandyt theme?'  

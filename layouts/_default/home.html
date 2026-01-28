@@ -46,7 +46,9 @@
 <div class="home-post-title">
 	<h1>{{ T "home.allposts" }}</h1>
 </div>
-    {{ $paginator := .Paginate (site.RegularPages.ByDate.Reverse) }}
+	{{ $pages := where site.RegularPages "Params.hidden" "!=" true }}
+    {{ $paginator := .Paginate ($pages.ByDate.Reverse) }}
+    <!-- {{ $paginator := .Paginate (site.RegularPages.ByDate.Reverse) }} -->
 	{{ partial "pages.html" (dict "paginator" $paginator) }}
 {{end}}
 
