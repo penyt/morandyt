@@ -1,0 +1,5 @@
+# Avoid reformatting Hugo templates; Go template syntax often breaks under Prettier.
+layouts/**/*.html
+layouts/**/*.xml
+layouts/**/*.json
+layouts/**/*.txt
