@@ -11,5 +11,4 @@ author = 'pen'
 authorNote = ''
 authorImg = '/img/penlike.png' # static/  
 comments = true  
-weight = ''
 +++
