@@ -8,15 +8,10 @@
 	{{ .Content }}
 	<!--posts/_index.md 、 about/_index.html 、 contact/_index.html-->
 </div>
-	
+
 {{ $pages := where .Pages "Params.hidden" "!=" true }}
 <!-- {{ $paginator := .Paginate ($pages.ByDate.Reverse) }} -->
 <!-- {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }} -->
-{{ $pages = sort $pages "Title" "asc" }}
-{{ $pages = sort $pages "Date" "desc" }}
-{{ $pages = sort $pages "Params.weight" "asc" }}
-{{ $paginator := .Paginate $pages }}
-
-{{ partial "pages.html" (dict "paginator" $paginator) }}
-
-{{ end }}
+{{ $pages = sort $pages "Title" "asc" }} {{ $pages = sort $pages "Date" "desc"
+}} {{ $pages = sort $pages "Weight" "asc" }} {{ $paginator := .Paginate $pages
+}} {{ partial "pages.html" (dict "paginator" $paginator) }} {{ end }}
