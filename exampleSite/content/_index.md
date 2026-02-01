@@ -8,8 +8,10 @@ draft = false
 This is a Hugo Theme made by penyt, called "**Morandyt**".  The name comes from the color tone Morandi.  
 
 {{< link-card name="penyt GitHub" desc="this is my github link" link="https://github.com/penyt" img="https://raw.githubusercontent.com/penyt/Copyright-and-License/refs/heads/main/LOGO/penlike.png" >}}
+  
+{{< link-card name="404 Page" desc="demo of 404 page" link="https://morandyt.penyt.com/404" >}}
 
-{{< link-card name="404 Page" desc="demo of 404 page" link="http://localhost:1313/404" >}}
+{{< link-card name="404 Page (locally)" desc="demo of 404 page (locally)" link="http://localhost:1313/404" >}}
 
 If you like this hugo theme, give us a little ⭐️ on github!  
 

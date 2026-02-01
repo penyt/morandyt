@@ -54,10 +54,15 @@ theme = "morandyt"
 ```
 Here's an example [hugo.toml](https://github.com/penyt/morandyt/blob/main/exampleSite/hugo.toml).  
 
-You can preview the example site with:
+You can preview the example site [here](https://morandyt.penyt.com) or locally with:
 ```sh
 hugo server -s themes/morandyt/exampleSite --themesDir ../..
 ```
+  
+### Get latest theme version  
+```sh  
+git submodule update --remote --merge  
+```  
 
 ## 📝 Documentation
 

@@ -47,8 +47,13 @@
 	<h1>{{ T "home.allposts" }}</h1>
 </div>
 	{{ $pages := where site.RegularPages "Params.hidden" "!=" true }}
-    {{ $paginator := .Paginate ($pages.ByDate.Reverse) }}
+    <!-- {{ $paginator := .Paginate ($pages.ByDate.Reverse) }} -->
     <!-- {{ $paginator := .Paginate (site.RegularPages.ByDate.Reverse) }} -->
+	{{ $pages = sort $pages "Title" "asc" }}
+	{{ $pages = sort $pages "Date" "desc" }}
+	{{ $pages = sort $pages "Params.weight" "asc" }}
+	{{ $paginator := .Paginate $pages }}
+
 	{{ partial "pages.html" (dict "paginator" $paginator) }}
 {{end}}
 

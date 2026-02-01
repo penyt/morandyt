@@ -10,5 +10,6 @@ tocStyle = '' # none, dot, order
 author = 'pen'
 authorNote = ''
 authorImg = '/img/penlike.png' # static/  
-comments = true
+comments = true  
+weight = ''
 +++

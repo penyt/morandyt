@@ -31,3 +31,12 @@
 	icon = ""
 	color = "#ffffffff"
 	bgColor = "#1f4a2bff"
+
+[test1]
+	icon = "⚙️"
+
+[test2]
+	icon = "🔧"
+
+[test3]
+	icon = "🛠️"
