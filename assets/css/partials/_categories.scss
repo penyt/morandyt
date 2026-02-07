@@ -4,6 +4,9 @@
 	align-items: center;
 	margin-bottom: 40px;
 }
+.post-categories .categories {
+	margin-bottom: 0;
+}
 .cat-ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -24,6 +27,15 @@
 .cat-a:hover {
 	text-decoration: none;
 	font-weight: bold;
+}
+
+.post-categories .categories {
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+.post-categories .categories .cat-ul li {
+	margin: 0;
+	margin-right: 0.8rem;
 }
 
 .taxonomy-title {
