@@ -100,7 +100,7 @@ jobs:
             --gc \
             --minify \
             --themesDir=../.. \
-            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --baseURL "https://morandyt-demo.penyt.com/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
 
       - name: Cache save
