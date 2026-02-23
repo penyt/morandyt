@@ -114,3 +114,7 @@ defaultContentLanguage = "en" # for theme language
 
 [outputs] # use for searching, recommend not to change
 	home = ["HTML", "RSS", "json"]
+
+[caches] # for github pages deployment
+	[caches.images]
+		dir = ':cacheDir/images'
