@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://morandyt-demo.penyt.com/"
 languageCode = "en" # for meta
 title = "Morandyt Demo" # website main title
 theme = "morandyt" # theme name
